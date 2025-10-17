@@ -27,8 +27,8 @@ let arr = [
 let clutter = "";
 
 arr.forEach(function(elem, index){
-    clutter += ` <div  class="story">
-                <img id = "${index}" src="${elem.dp}"alt="">
+    clutter += ` <div id = "${index}"  class="story">
+                <img  src="${elem.dp}"alt="">
             </div>`
 })
 
@@ -37,5 +37,9 @@ stories.innerHTML = clutter;
 stories.addEventListener('click',function(e){
     fullScreen.style.display = "block";
     fullScreen.style.backgroungImage = `url(${arr[e.target.id].story})`;
+
+    setTimeout(function(){
+        fullScreen.style.display = "none";
+    },3000);
 })
 
