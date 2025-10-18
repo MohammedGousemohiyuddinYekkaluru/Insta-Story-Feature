@@ -20,8 +20,9 @@ body{
     height: 380px;
     width: 250px;
     background-color: #fff;
-    border-radius: 10px;
-    border: 2px solid black;
+    border-radius: 13px;
+    border: 3px solid black;
+    overflow: hidden;
     position: relative;
 }
 
@@ -40,12 +41,13 @@ body{
 }
 
 .story{
-    border: 2px solid red;
+    border: 3px solid red;
     height: 70px;
     width: 70px;
     border-radius: 50%;
     overflow: hidden;
     display: inline-block;
+    cursor: pointer;
 }
 
 .story img{
